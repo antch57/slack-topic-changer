@@ -10,7 +10,7 @@ const channelID = async () => {
         token: botToken
     });
 
-    const channel = channelList.channels.filter((e) => e.name == 'anttest');
+    const channel = channelList.channels.filter((e) => e.name == 'musicsharing');
     return channel[0].id;
 }
 

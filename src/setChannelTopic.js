@@ -7,7 +7,7 @@ const userToken = config.userToken;
 const web = new WebClient(userToken);
 
 const setTopic = () => {
-    const week = `Monday: ${weekObj.Monday} Tuesday: ${weekObj.Tuesday} Wednesday: ${weekObj.Wednesday} Thursday: ${weekObj.Thursday} Friday: ${weekObj.Friday}`
+    const week = `Monday: ${weekObj.Monday}\nTuesday: ${weekObj.Tuesday}\nWednesday: ${weekObj.Wednesday}\nThursday: ${weekObj.Thursday}\nFriday: ${weekObj.Friday}`
     channelID().then((val) => {
         web.conversations.setTopic({
             token: userToken,
